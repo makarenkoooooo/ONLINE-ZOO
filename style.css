@@ -371,7 +371,7 @@ a:hover {
 /* закончили медиазапросы для хедера  */
 /* section Watch-Online */
 .watch-online {
-  background-image: url(/assets/images/Giant_Panda.png);
+  background-image: url(./assets/images/Giant_Panda.png);
   height: 780px;
   background-repeat: no-repeat;
   position: relative;
