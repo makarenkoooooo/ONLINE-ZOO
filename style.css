@@ -704,11 +704,11 @@ h3 {
 }
 
 .btn-animal-left::after {
-  content: url(/assets/icons/btn-left.svg);
+  content: url(./assets/icons/btn-left.svg);
 }
 
 .btn-animal-right::after {
-  content: url(/assets/icons/btn-right.svg);
+  content: url(./assets/icons/btn-right.svg);
 }
 
 .animals {
@@ -1238,20 +1238,20 @@ h4 {
 }
 
 .icon-media-1::after {
-  content: url(/assets/icons/facebook.svg);
+  content: url(./assets/icons/facebook.svg);
 }
 
 .icon-media-2::after {
-  content: url(/assets/icons/twitter.svg);
+  content: url(./assets/icons/twitter.svg);
   text-align: center;
 }
 
 .icon-media-3::after {
-  content: url(/assets/icons/instagram.svg);
+  content: url(./assets/icons/instagram.svg);
 }
 
 .icon-media-4::after {
-  content: url(/assets/icons/you-tube.svg);
+  content: url(./assets/icons/you-tube.svg);
 }
 
 .media {
