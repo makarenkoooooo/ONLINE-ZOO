@@ -1,0 +1,595 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+a::visited {
+  color: #ffffff;
+}
+a:hover {
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+body {
+  max-width: 1600px;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  display: flex;
+  background-color: #000000;
+  color: #ffffff;
+  align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.logo {
+  border: 1px solid #ffffff;
+  padding: 3.55px 4.75px 3.55px 4.75px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19.0145px;
+  line-height: 120%;
+  text-align: center;
+  margin-left: 220px;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  margin-right: 63px;
+}
+
+h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19.0145px;
+  line-height: 120%;
+  text-align: center;
+  color: #ffffff;
+}
+
+.element-logo {
+  position: relative;
+  top: 24.64px;
+  left: 7.13px;
+}
+
+.nav-bar {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  margin-right: 438px;
+}
+
+ul {
+  padding: 0;
+  display: flex;
+}
+
+li:last-child {
+  margin-right: 0px;
+}
+
+li {
+  list-style-type: none;
+  margin-right: 58px;
+}
+
+.panda {
+  background-image: url(/assets/images/panda_bg.png);
+  height: 390px;
+}
+
+.pick-and-feed-donate {
+  padding: 40px 220px 180px 220px;
+
+  background: linear-gradient(
+      315.75deg,
+      rgba(254, 210, 144, 0.7) 30.06%,
+      #febdab 100.95%,
+      rgba(254, 210, 144, 0.7) 106.36%
+    ),
+    linear-gradient(
+      315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    ),
+    linear-gradient(
+      315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    );
+}
+
+.title-pick-and-feed-donate {
+  margin: 0 auto;
+}
+
+.text-1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 130%;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.text-2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 130%;
+  color: #fe9013;
+  margin-bottom: 60px;
+}
+
+.donate {
+  background: rgba(255, 255, 255, 0.52);
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+  padding: 40px 92px 62px 92px;
+}
+
+h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 120%;
+  text-align: center;
+  color: #fe9013;
+  margin-bottom: 20px;
+}
+
+.text-donate {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  color: #333b41;
+  margin-bottom: 60px;
+}
+
+.number-donate {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 80%;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.icon-panda {
+  display: flex;
+  margin-left: 215px;
+  margin-bottom: 80px;
+}
+
+.num-day {
+  text-align: center;
+  align-items: center;
+}
+
+.number-donate {
+  margin-top: 105px;
+  margin-bottom: 11px;
+}
+
+.icon-panda-img {
+  margin-left: 89px;
+}
+
+.dollars {
+  width: 976px;
+  height: 40px;
+  background: #404950;
+  border-radius: 2px;
+  margin-bottom: 6px;
+}
+
+.yellow-circle {
+  display: flex;
+  justify-content: space-around;
+}
+
+.yellow-circle li {
+  width: 10px;
+  height: 10px;
+  background: #ffee2e;
+  border-radius: 50%;
+  margin-top: 16px;
+}
+
+.number-dollars {
+  padding-right: 30px;
+  margin-bottom: 50px;
+}
+.wrapper-number-dollars {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper-number-dollars li {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #333b41;
+}
+
+input[type="number"] {
+  padding: 16px;
+  padding-right: 143px;
+  height: 54px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #929699;
+  border: 1px solid #929699;
+  margin: 0 auto;
+  background: transparent;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+.number-cash {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.number-cash::before {
+  content: url(/assets/icons/dollar.svg);
+  color: #929699;
+  position: absolute;
+  top: 17px;
+  left: 301px;
+}
+
+.radio-btn {
+  margin: 0 auto;
+}
+
+.radio-btn {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #333b41;
+  margin-bottom: 31px;
+}
+
+.radio-btn label {
+  margin-right: 50px;
+}
+
+input[type="radio"] {
+  width: 16px;
+  height: 16px;
+  left: 0px;
+  top: 2px;
+  border: 1px solid #fe9013;
+}
+
+.donate-btn {
+  width: 298px;
+  height: 54px;
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  border-radius: 25px;
+  border: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.text-form {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #333b41;
+  text-align: center;
+}
+
+.btn {
+  width: 298px;
+  height: 54px;
+  background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+  border-radius: 25px;
+  border: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 auto;
+  display: block;
+  margin-top: 60px;
+}
+
+.btn-2 {
+  margin-top: 31px;
+  margin-left: 220px;
+
+  border-radius: 5px;
+}
+
+.footer {
+  position: relative;
+  background-color: #111115;
+  z-index: 2;
+  padding: 41px 228px 50px 220px;
+}
+
+.title-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.logo-footer {
+}
+.email-footer {
+}
+.email-footer h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  color: #ffffff;
+}
+
+.input-email {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #bdbdbd;
+  width: 228px;
+  height: 42px;
+  border-radius: 2px;
+  border: 0.7px solid rgba(254, 144, 19, 1);
+  background-color: #111115;
+}
+
+.btn-submit {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #4b9200;
+  width: 129px;
+  height: 42px;
+  background: #f1f3f2;
+  border: 1px solid #4b9200;
+  border-radius: 5px;
+}
+
+.btn-3 {
+  margin-left: 0px;
+  margin-bottom: 44px;
+}
+
+.icon-media {
+  width: 26px;
+  height: 26px;
+  background: rgba(196, 196, 196, 0.5);
+  border-radius: 50px;
+  text-align: center;
+  align-items: center;
+  padding-top: 5px;
+  margin-right: 12px;
+}
+
+.icon-media-1::after {
+  content: url(/assets/icons/facebook.svg);
+}
+
+.icon-media-2::after {
+  content: url(/assets/icons/twitter.svg);
+  text-align: center;
+}
+
+.icon-media-3::after {
+  content: url(/assets/icons/instagram.svg);
+}
+
+.icon-media-4::after {
+  content: url(/assets/icons/you-tube.svg);
+}
+.social-media {
+}
+.media {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.media p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #ffffff;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.text-footer {
+  margin-top: 100px;
+  margin-left: 171px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 130%;
+  color: #ffffff;
+}
+
+.footer-elements {
+  display: flex;
+}
+
+.navbar-footer {
+  margin-left: 197px;
+  margin-top: 100px;
+}
+
+/* .range-donate {
+  display: block;
+  width: 976px;
+  height: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #404950;
+  -webkit-appearance: none;
+}
+
+.range-donate::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: #ffee2e;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+datalist {
+  display: flex;
+  justify-content: space-between;
+}
+
+datalist option {
+  margin-right: 10px;
+  padding: 6px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #333b41;
+} */
